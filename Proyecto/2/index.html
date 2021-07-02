@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Algoritmo de Prim y Kruskal</title>
+	<base href="Algoritmos/">
+	<link rel="stylesheet" type="text/css" href="EstiloIndex.css">
+	<script> 
+			function Prim(){
+				window.location="AnimacionPrim.html";
+			}
+			function Kruskal(){
+				window.location="AnimacionKruskal.html";
+			}
+	</script>
+</head>
+<body>
+	<header>
+		<h1>Algoritmos Greedy</h1>
+	</header>
+	<article>
+		<header>
+			<h3>¿Qué es un algoritmo greedy?</h3>
+		</header>
+		<section>
+			<ul>
+				<li>Los algoritmos greedy son algoritmos que toman decisiones de corto alcance, basadas en información inmediatamente disponible, sin importar consecuencias futuras.</li>
+				<li>Se usan generalmente para resolver problemas de optimización.</li>
+			</ul>
+		</section>
+	</article>
+	<article>
+		<header>
+			<h3>Algoritmo de Kruskal</h3>
+		</header>
+		<section>
+			<ul>
+				<li>El Algoritmo de Kruskal es un algoritmo greedy que resuelve el problema de encontrar un árbol minimal de cubrimiento.</li>
+				<li>Se caracteriza por seleccionar en cada iteración el menor de los arcos todavía no considerados.</li>
+				<li>Si el arco seleccionado junto con la solución parcial es viable, entonces se incluye en la solución parcial. En caso contrario, es descartado.</li>
+				<li>Se puede demostrar que es correcto, ie que siempre encuentra un árbol minimal de cubrimiento para un grafo no dirigido, conexo y con pesos.</li>	
+				<li>La complejidad de éste algoritmo es de O(a log n).</li>				
+			</ul>
+		</section>
+		<section>
+			<ul>
+				<ul>
+					<li>Implementación:</li>
+					<li>Ordenar los arcos al principio para que la selección sea eficiente.</li>
+					<li>usar conjuntos disjuntos para controlar si un nuevo arco conecta componentes distintos.</li>
+				</ul>	
+			</ul>
+		</section>
+			<input type="button" name="Kruskal" value="Ver en Acción" onclick="Kruskal();">
+	</article>
+	<article>
+		<header>
+			<h3>Algoritmo de Prim</h3>
+		</header>
+		<section>
+			<ul>
+				<li>Se caracteriza por hacer la selección en forma local, partiendo de un nodo seleccionado y construyendo el árbol en forma ordenada.</li>
+				<li>Dado que el arco es seleccionado de aquellos que parten del árbol ya construído, la viabilidad está asegurada.</li>
+				<li>también se puede demostrar que el algoritmo de Prim es correcto, es decir que devuelve un árbol minimal de cubrimiento en todos los casos.</li>			
+				<li>El orden de complejidad es de O(n^2). Si el algoritmo se implementa con montículos, el tiempo requerido de éste algoritmo es de O(n log n). Lo que significa que para un tamaño del problema tomaría menos recursos del computador para poder ejecutar el algoritmo.</li>
+			</ul>		
+		</section>
+		<section>
+			<ul>
+				<ul>
+					<li>Implementación:</li>
+					<li>Suponer G representado por una matriz de adyacencia.</li>
+					<li>usar un arreglo dist[] para conocer cuál es la distancia a B de cada nodo</li>
+					<li>usar un arreglo nodoMasCerca[] para conocer con cuál nodo de B se tiene esa distancia.</li>
+				</ul>	
+			</ul>
+		</section>
+				<input type="button" name="Prim" value="Ver en Acción" onclick="Prim();">
+	</article>
+</body>
+</html>

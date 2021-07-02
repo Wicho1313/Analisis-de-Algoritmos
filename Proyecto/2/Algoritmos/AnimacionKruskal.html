@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://www.cs.usfca.edu/~galles/visualization/Kruskal.html -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<title>
+			Animación Kruskal 
+		</title>
+		
+		<!-- Hoja de estilo de la página-->
+		
+		<link rel="stylesheet" href="./Archivos_Kruskal/EstiloPagina.css">
+					
+		<!-- Librerías de jquery. SOlo son utilizadas para el deslizador de velocidad -->
+		<link rel="stylesheet" href="./Archivos_Kruskal/jquery-ui-1.8.11.custom.css">				
+		<script src="./Archivos_Kruskal/jquery-1.5.2.min.js"></script>
+		<script src="./Archivos_Kruskal/jquery-ui-1.8.11.custom.min.js"></script>
+				
+		<!-- Archivos de Javascript para la animación con canvas-->
+		<script type="text/javascript" src="./Archivos_Kruskal/PersonalizarEventos.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/DeshacerFunciones.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/ObjetoAnimado.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/EtiquetaAnimada.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/CirculoAnimado.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/RectanguloAnimado.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/ListaVInculadaAnimada.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/ResaltarCirculo.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/Linea.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/ManejadorObjetos.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/AnimacionPrincipal.js"> </script>
+		
+		<!-- Archivos Javascript de la implementación del algoritmo de kruskal-->
+		<script type="text/javascript" src="./Archivos_Kruskal/Algoritmo.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/Grafico.js"> </script>
+		<script type="text/javascript" src="./Archivos_Kruskal/Kruskal.js"></script>
+		<script>
+			function Regresa(){
+				window.location="../index.html"}
+			function Prim(){
+				window.location="./AnimacionPrim.html"}
+		</script>	
+	</head> 
+	
+<body onload="init(false);" class="VisualizationMainPage">
+		
+		<div id="container">
+			
+			<div id="header">  
+				<h1>Árbol recubridor mínimo con el algoritmo de kruskal</h1>
+			</div>
+			
+			<div = id ="mainContent"> 
+				
+				<div id="algoControlSection">
+					
+					<!-- Los elementos serán creados en los archivos Javascript -->
+					<!-- Secrean dinámicamente y se implementan en el document html en su respectivo id -->
+					<input type="button" id="Regresar" value="Regresar a la pantalla principal." onclick="Regresa();">
+					<input type="button" id="SigAlgoritmo" value="Ver el Algoritmo de Prim" onclick="Prim();">
+					<table id="AlgorithmSpecificControls"></table> 
+				</div>
+				
+					<!-- Dibujando el canvas se puede redimensionar en el código -->
+									
+				<canvas id="canvas" width="1000" height="500"></canvas>
+				
+				<div id="generalAnimationControlSection">
+					
+					<!-- Controles de la para la animación serán implementados en sus respectivos id-->
+					<!-- (AnimacionPrincipal.js)  -->
+
+					<table id="GeneralAnimationControls"></table>		
+				
+				</div>
+				
+			</div>
+			
+			<div id="footer">  
+				<p>Equipo: Fuerza.exe</p>
+			</div>
+
+		</div><!-- contenedor de todo -->
+</body>
+</html>

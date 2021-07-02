@@ -1,0 +1,15 @@
+Eligió el algoritmo de burbuja Optimizada
+Calculando el tiempo de ordenar 100 numeros
+
+Tiempo total:  0.0000019073 s
+Tiempo de procesamiento en CPU: 0.0000080000 s
+Tiempo en acciónes de E/S:  0.0000000000 s
+CPU/Wall:   419.4304000000 % 
+
+En formato exponencial:
+Tiempo total:  1.9073486328e-06 s
+Tiempo de procesamiento en CPU: 8.0000000000e-06 s
+Tiempo en acciónes de E/S:  0.0000000000e+00 s
+CPU/Wall:   419.4304000000 % 
+
+Nuevo archivo de texto creado en donde se encuentran los numeros ordenados

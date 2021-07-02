@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+
+body {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	/*background: #666666; */
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+
+
+
+
+.VisualizationMainPage #mainContent {
+	/*padding: 0 20px; /* remember that padding is the space inside the div box and margin is the space outside the div box */
+	background: #FFFFFF;
+}
+
+
+
+.VisualizationMainPage #container {
+
+
+	background: #FFFFFF;
+	/*margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}
+
+
+.VisualizationMainPage #algoControlSection
+{
+	background:	#E0FFFF; 
+	color:#000000;
+	 
+	
+}
+
+
+.VisualizationMainPage #generalAnimationControlSection
+{
+	background:#E0FFFF; 
+	color:#00008B; 
+
+}
+
+.VisualizationMainPage  #header { 
+	background:#E0FFFF; 
+	columns: #00008B;
+	padding: 0 10px 0 20px;
+	  
+} 
+ 
+.VisualizationMainPage #header  A:visited 
+	  { text-decoration:none;
+		color:#00008B; 
+	   }
+	   
+	   
+.VisualizationMainPage #header h1 {
+	margin: 0; 
+	padding: 10px 0; 
+	}
+	   
+.VisualizationMainPage #header A:link {
+    text-decoration:none;
+    color:#00008B;
+	}
+	
+	
+.VisualizationMainPage #container {
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	text-align: left; /* this overrides the text-align: center on the body element. */
+}	
+	
+	
+.VisualizationMainPage #footer  A:visited { text-decoration:none;
+        color:ffcc33; 
+}
+
+.VisualizationMainPage #footer A:link {
+    text-decoration:none;
+	color:#00008B;
+}
+
+
+	
+
+.VisualizationMainPage #mainContent h1{
+	padding: 0 20px; 
+	background: #FFFFFF;
+	color:#000000;
+}
+
+.VisualizationMainPage #mainContent h2{
+	padding: 0 20px; 
+	background: #FFFFFF;
+	color:#000000;
+}
+
+.VisualizationMainPage #mainContent h3{
+	padding: 0 20px; 
+	background: #FFFFFF;
+	color:#000000;
+}
+
+
+
+.VisualizationMainPage #footer { 
+	padding: 0 10px;
+    background:  #E0FFFF;
+	color:#00008B;
+} 
+.VisualizationMainPage #footer p {
+	margin: 0; 	padding: 10px 0; 
+}
+[type="Button"]{
+	margin-left: 30px;
+	padding: .375rem .75rem;
+	border: 1px solid #007bff;
+	border-radius: .25rem;
+	color: #007bff;
+	transition: color .15s ease-in-out,
+	  background-color .15s ease-in-out;
+  }
+  
+  [type="Button"]:hover, [type="Button"]:active, [type="Button"]:focus {
+	color: #fff;
+	background-color: #007bff;
+  }
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+	  position: absolute;
+	  left: -9999px;
+  }
+  [type="radio"]:checked + label,
+  [type="radio"]:not(:checked) + label
+  {
+	  padding-left: 28px;
+	  cursor: pointer;
+	  position: relative;
+	  line-height: 20px;
+	  display: inline-block;
+	  color: #666;
+  }
+  [type="radio"]:checked + label:before,
+  [type="radio"]:not(:checked) + label:before {
+	  content: '';
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  width: 18px;
+	  height: 18px;
+	  border: 1px solid #ddd;
+	  border-radius: 100%;
+	  background: #fff;
+  }
+  [type="radio"]:checked + label:after,
+  [type="radio"]:not(:checked) + label:after {
+	  content: '';
+	  width: 12px;
+	  height: 12px;
+	  background: #F87DA9;
+	  position: absolute;
+	  top: 4px;
+	  left: 4px;
+	  border-radius: 100%;
+	  -webkit-transition: all 0.2s ease;
+	  transition: all 0.2s ease;
+  }
+  [type="radio"]:not(:checked) + label:after {
+	  opacity: 0;
+	  -webkit-transform: scale(0);
+	  transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+	  opacity: 1;
+	  -webkit-transform: scale(1);
+	  transform: scale(1);
+  }
+EM {text-decoration: bold;}
+
+	

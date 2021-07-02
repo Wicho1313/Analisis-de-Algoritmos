@@ -1,0 +1,10 @@
+void Algoritmos (int algoritmo, int tam);
+int * leerArchivo (int * Arreglo, int tam);
+void Burbuja_Simple (int * Arreglo, int tam);
+void Burbuja_Optimizada (int * Arreglo, int tam);
+void Insercion (int * Arreglo, int tam);
+void Seleccion (int * Arreglo, int tam);
+void Shell (int * Arreglo, int tam);
+void Arbol_Binario (int * Arreglo, int tam);
+void Tiempos (double utime0, double stime0, double wtime0, double utime1, double stime1, double wtime1, int tam);
+void Imprime_Numeros (int * Arreglo, int tam);

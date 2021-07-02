@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta charset="UTF-8">
+		
+		<title>
+			Algoritmo de Prim
+		</title>
+		
+		<!-- css sheet for how the page is laid out -->
+		
+		<link rel="stylesheet" href="./Archivos_Prim/EstiloPagina.css">
+			
+			
+		<!-- Librerías de JQuery para el deslizador de velocidad de animación. -->
+		<link rel="stylesheet" href="./Archivos_Prim/jquery-ui-1.8.11.custom.css">				
+		<script src="./Archivos_Prim/jquery-1.5.2.min.js"></script>
+		<script src="./Archivos_Prim/jquery-ui-1.8.11.custom.min.js"></script>
+				
+		<!-- Archivos Javascript para la animación-->
+		<script type="text/javascript" src="./Archivos_Prim/PersonalizarEventos.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/DeshacerFunciones.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/ObjetoAnimado.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/EtiquetaAnimada.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/CirculoAnimado.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/RectanguloAnimado.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/ListaVinculadaAnimada.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/ResaltarCirculo.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/Linea.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/ManejadorObjetos.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/AnimacionPrincipal.js"> </script>
+
+		<!-- Archivos JavaScript referentes al algoritmo de prim -->
+		<script type="text/javascript" src="./Archivos_Prim/Algoritmo.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/Grafo.js"> </script>
+		<script type="text/javascript" src="./Archivos_Prim/DijkstraPrim.js"> </script>
+		<script>
+			function Regresa(){
+				window.location="../index.html"}
+			function kruskal(){
+				window.location="./AnimacionKruskal.html"}
+		</script>		
+			
+	 </head> 
+	
+	<body onload="init(false);" class="VisualizationMainPage">
+		
+		<div id="container">
+			
+			<div id="header">  
+				<h1>Árbol Recubridor Mínimo con el algoritmo de Prim</h1>
+			</div>
+			
+			<div = id="mainContent"> 
+				
+				<div id="algoControlSection">
+					
+					<!-- Los elementos serán creados en los archivos Javascript -->
+					<!-- Secrean dinámicamente y se implementan en el document html en su respectivo id -->
+					<input type="button" id="Regresar" value="Regresar a la pantalla principal." onclick="Regresa();">
+					<input type="button" id="SigAlgoritmo" value="Ver el Algoritmo de kruskal" onclick="kruskal();">
+					<table id="AlgorithmSpecificControls"></table> 
+				</div>
+				
+					<!-- Dibujando el canvas se puede redimensionar en el código -->
+									
+				<canvas id="canvas" width="1000" height="500"></canvas><div id="generalAnimationControlSection">
+					
+					<!-- Controles de la para la animación serán implementados en sus respectivos id-->
+					<!-- (AnimacionPrincipal.js)  -->
+
+					<table id="GeneralAnimationControls"></table>		
+				</div>
+				
+			</div> 
+			
+			<div id="footer">  
+				<p>Equipo: Fuerza.exe</p>
+			</div>
+
+		</div><!-- container -->
+	
+</body>
+</html>
